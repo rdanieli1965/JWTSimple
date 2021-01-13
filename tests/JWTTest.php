@@ -1,15 +1,13 @@
 <?php
 
-use JWTM\JWTMBuilder;
-
-use const JWTM\HS256;
-
 include "./vendor/autoload.php";
+
+use JWTM\JWTMBuilder;
 
 $jwtm = new JWTMBuilder;
 
 $jwtm->setEncrypt('HS384')
-    ->setSecretKey("a")
+    ->setSecretKey("as")
     ->addClaim("teste", "abcd")
     ->addClaim("teste1", "abcd")
     ->addClaim("teste2", "abcd")

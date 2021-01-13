@@ -1,5 +1,5 @@
 <?php
-namespace JWTM\Interface;
+namespace JWTM\Interfaces;
 
 interface PayloadValidation
 {
